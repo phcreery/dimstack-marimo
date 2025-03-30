@@ -129,10 +129,22 @@ def _(ds, m1, m3, m4, m5, m6, m7, mo):
 
 
 @app.cell
-def _(ds, stack):
-    spec = ds.Requirement("stack spec", "", distribution=ds.calc.RSS(stack).review(3).distribution, LL=0.0, UL=99)
+def _(ds, stack_longerm2):
+    spec = ds.Requirement("stack spec", "", distribution=ds.calc.RSS(stack_longerm2).review(3).distribution, LL=0.0, UL=99)
     spec.show()
     return (spec,)
+
+
+@app.cell
+def _(mo):
+    mo.md(r"""This means the assembly will be maufactured to the allowable bounds 99.95% of the time if the slot was increased to 1.2 mm""")
+    return
+
+
+@app.cell
+def _(mo):
+    mo.md(r""" """)
+    return
 
 
 if __name__ == "__main__":

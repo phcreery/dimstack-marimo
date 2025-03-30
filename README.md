@@ -1,15 +1,16 @@
 # dimstack Demo with marimo WebAssembly
 
-## 🚀 Usage
+## Usage
 
 1. Add marimo files to the `notebooks/` or `apps/` directory
    1. `notebooks/` notebooks are exported with `--mode edit`
    2. `apps/` notebooks are exported with `--mode run`
-2. Push to main branch
-3. Go to repository **Settings > Pages** and change the "Source" dropdown to "GitHub Actions"
-4. GitHub Actions will automatically build and deploy to Pages
+2. `uv run marimo edit` to work on them
+3. Push to main branch
+4. Go to repository **Settings > Pages** and change the "Source" dropdown to "GitHub Actions"
+5. GitHub Actions will automatically build and deploy to Pages
 
-## 🧪 Testing
+## Testing
 
 To test the export process, run `scripts/build.py` from the root directory.
 
