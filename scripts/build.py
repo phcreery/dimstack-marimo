@@ -58,6 +58,8 @@ def generate_index(all_notebooks: List[str], output_dir: str) -> None:
   </head>
   <body>
     <div>
+    <h3>dimstack</h3>
+    <p>Generated notebooks</p>
       <ul>
 """
             )
